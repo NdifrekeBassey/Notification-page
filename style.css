@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: hsl(240, 24%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+section {
+  background-color: hsl(240, 15%, 12%);
+  width: 80%;
+  margin-top: 2rem;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+header > p {
+  padding-top: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.num {
+  display: flex;
+  gap: 15px;
+}
+
+#number {
+  background-color: hsl(206, 73%, 45%);
+  color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 25px;
+}
+
+.container {
+  background-color: hsl(240, 20%, 25%);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  background-color: hsl(240, 22%, 28%);
+  transform: translateY(-5px);
+}
+
+.unread {
+  background-color: hsl(5, 85%, 55%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.unread.active {
+  display: none;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 2px solid hsl(206, 73%, 45%);
+}
+
+a {
+  color: hsl(206, 73%, 60%);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: hsl(206, 73%, 80%);
+}
+
+h4 {
+  color: hsl(206, 24%, 80%);
+  font-size: 0.9em;
+}
+
+.group {
+  color: hsl(206, 73%, 45%);
+  font-weight: 700;
+}
+
+.dropdown {
+  padding: 10px;
+  background-color: hsl(240, 24%, 20%);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  h4 {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  img {
+    width: 2.2em;
+    height: 2.2em;
+  }
+
+  h4 {
+    font-size: 0.7em;
+  }
+}
